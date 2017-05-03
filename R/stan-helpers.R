@@ -406,7 +406,7 @@ stan_families <- function(family, bterms) {
   } else if (any(families %in% "hurdle_lognormal")) {
     out$fun <- "  #include 'fun_hurdle_lognormal.stan' \n"
   } else if (any(families %in% "exgaussian")) {
-    out$fun <- "  #include 'fun_exgaussian.stan' \n"
+    #out$fun <- "  #include 'fun_exgaussian.stan' \n"
   } else if (any(families %in% "inverse.gaussian")) {
     out$fun <- "  #include 'fun_inv_gaussian.stan' \n"
     out$tdataD <- "  #include 'tdataD_inv_gaussian.stan' \n"
